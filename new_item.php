@@ -1,8 +1,8 @@
 <?php
-/*******w******** 
+/*************** 
     
     Name: Azime Ulker
-    Date: 
+    Date: 10/24/2023
     Description: CMS Project - New Author function
 
 ****************/
@@ -12,6 +12,7 @@
     //  Sanitize user input to escape HTML entities and filter out dangerous characters.
     $author = filter_input(INPUT_POST, 'new_author', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
+    //Check if a new author is being added.
     if(isset($_POST['new_author'])){
         //  Build the parameterized SQL query and bind to the above sanitized values.
         $query = "INSERT INTO authors (pen_name) VALUES (:author)";  
@@ -30,6 +31,31 @@
         }
     }
     else $message = " ❗❗❗ ERROR❗❗❗";
+
+    // Check if a new genre is being added.
+    if (isset($_POST['new_genre'])) {
+
+    $genre = filter_input(INPUT_POST, 'new_genre', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+    // Build the parameterized SQL query and bind to the above sanitized values.
+    $query = "INSERT INTO genres (genre_name) VALUES (:genre)";
+
+    // A PDO::Statement is prepared from the query.
+    $statement = $db->prepare($query);
+
+    // Bind values to the parameters
+    $statement->bindValue(":genre", $genre);
+
+    // Execute the INSERT.
+    if ($statement->execute()) {
+        header("Location: admin_book.php");
+        exit;
+    }
+}
+
+// Fetch the list of genres from the database.
+$genresQuery = "SELECT * FROM genres";
+$genres = $db->query($genresQuery)->fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -89,6 +115,19 @@
                             </div>   
                             <div><input type="submit" id="button" value="Create Author"></div>
                         </form>   
+
+                        <form method="post" action="new_item.php">
+                        <div class="input-container">
+                            <input type="text" name="new_genre" required="">
+                            <label>New Genre</label>
+                        </div>
+                        <div>
+                            <input type="submit" id="button" value="Create Genre">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
                     <?php endif ?>
                 </div>
                 
@@ -98,7 +137,7 @@
         <footer>
             <div class="footer-content">
                 <h3>Booktagram</h3>
-                <p>**Booktagram explanation**</p>
+                <p>**Booktagram description**!</p>
                 <ul class="socials-media">
                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>

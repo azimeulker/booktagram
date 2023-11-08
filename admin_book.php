@@ -107,6 +107,8 @@ $author_statement->execute();
                                     <option value="<?= $genre['genre_name'] ?>"></option>
                                 <?php endwhile ?>
                             </datalist>
+                            <a href="new_item.php">+ New Genre</a>
+                        </div>
                         </div>    
 
                         <div class="input-container">
@@ -118,8 +120,8 @@ $author_statement->execute();
                                 <?php endwhile ?>
                             </datalist>
                             <a href="new_item.php">+ New Author</a>
-                        </div>    
-
+                        </div>
+                        
                         <div class="input-container">
                             <textarea id="content" name="content" required=""></textarea>
                             <label>Short Description</label>
