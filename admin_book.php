@@ -1,7 +1,7 @@
 <?php 
 /*******w******** 
     
-    Name: Azime ulker
+    Name: Azime Ulker
     Date: 10/24/2023
     Description: CMS Project - Admin Upload Page
 
