@@ -1,6 +1,7 @@
 body{
     min-height: 250vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg);
+    background-image: linear-gradient(rgba(246, 218, 161, 0.7), rgba(246, 218, 161, 0.7)), url(images/background.jpg);
+    width: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +31,7 @@ div.main_page{
 }
 
 .header img{
-    margin-top: -50px;
+    margin-top: -35px;
     width: 220px;
     height: 200px;
     margin-right: 20px;
@@ -51,11 +52,11 @@ margin: 0px 50px 0px 50px;
 .navContainer .search_bar #button{
   height: 30px;
   width: 130px;
-  color: white;
+  color: rgb(54, 51, 26);
   font-weight: normal;
   background-color: transparent;
   border-radius: 10px;
-  border:1px solid white;
+  border:1px solid rgb(54, 51, 26);
   border-top: none;
   font-size: 16px;
   font-family: 'Pacifico', cursive;
@@ -63,24 +64,24 @@ margin: 0px 50px 0px 50px;
   margin-left: 20px;
 }
 .navContainer .search_bar #button:hover{
-  background-color: rgba(32, 149, 32, 0.911);
-  border:1px solid rgba(32, 149, 32, 0.911);
+  background-color: solid rgba(54, 88, 11, 0.911);
+  border:1px solid rgba(54, 88, 11, 0.911);
 }
 a.logout{
   margin-top: 100px;
-  color: transparent;
+  color: rgb(54, 51, 26);
   text-align: right;
   font-size: larger;
   align-content: right;
 }
 a.logout:hover{
-  color: rgba(32, 149, 32, 0.911);
+  color: solid rgba(54, 88, 11, 0.911);
 }
 
 .navMenu{
 flex-grow: 2;
 margin: 5px 30px 5px 30px;
-background-color: white;
+background-color: rgb(54, 51, 26);
 align-self: center;
 border-radius: 10px;
 box-shadow: 5px 5px 5px rgb(199, 184, 184);
@@ -100,9 +101,9 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 
 .navigation {
   --b: 0.1em;  
-  --c: rgba(32, 149, 32, 0.911); 
+  --c: solid rgba(54, 88, 11, 0.911); 
   
-  color: #0000;
+  color: white;
   padding-block: var(--b);
   background: 
     linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
@@ -128,39 +129,39 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   top:0px;
   left:10px;
   font-size:16px;
-  color:white;	
+  color:rgb(54, 51, 26);	
   pointer-events:none;
   transition: all 0.5s ease-in-out;
 }
 .input-container input{ 
   border:0;
-  border-bottom:1px solid white; 
-  border-right:1px solid white;
-  border-left:1px solid white; 
+  border-bottom:1px solid rgb(54, 51, 26); 
+  border-right:1px solid rgb(54, 51, 26);
+  border-left:1px solid rgb(54, 51, 26); 
   background:transparent;
   width:100%;
   padding:8px 0 3px 5px;
   font-size:16px;
-  color:white;
+  color:rgb(54, 51, 26);
   border-radius: 10px;
 }
 .input-container input:focus{ 
  border:none;	
  outline:none;
- border-bottom:1px solid rgba(32, 149, 32, 0.911);	
- border-right:1px solid rgba(32, 149, 32, 0.911);	
- border-left:1px solid rgba(32, 149, 32, 0.911);	
+ border-bottom:1px solid rgba(54, 88, 11, 0.911);	
+ border-right:1px solid rgba(54, 88, 11, 0.911);	
+ border-left:1px solid rgba(54, 88, 11, 0.911);	
 }
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
 	top:-10px;
 	font-size:12px;
-	color: rgba(32, 149, 32, 0.911);
+	color:solid rgba(54, 88, 11, 0.911);
   font-weight: bold;
 }
   
 .admin i{
-  color: white;
+  color: rgb(54, 51, 26);
   font-size: 4rem;
   width: 5px;
   transition: color .4s ease;
@@ -170,10 +171,10 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 }
 
 .admin i:hover{
-  color: rgba(32, 149, 32, 0.911);
+  color: solid rgba(54, 88, 11, 0.911);
 }
 .add_book i{
-  color: white;
+  color: rgb(54, 51, 26);
   font-size: 4rem;
   width: 30px;
   transition: color .4s ease;
@@ -183,7 +184,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   }
   
   .add_book i:hover{
-  color: rgba(32, 149, 32, 0.911);
+  color: solid rgba(54, 88, 11, 0.911);
   }
 
 
@@ -206,7 +207,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   padding: 0 20px;
 }
 .container h1{
-  color: white;
+  color: rgb(54, 51, 26);
   font-weight: bolder;
   font-style: italic;
   margin-left: 20px;
@@ -215,7 +216,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   width: 450px;
 }
 .container i{
-  color: white;
+  color: rgb(54, 51, 26);
   font-size: 1rem;
   width: 15px;
   transition: color .4s ease;
@@ -359,7 +360,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 }
 .carousel__slide .description a{
   text-decoration: underline;
-  color: rgba(32, 149, 32, 0.911);
+  color: solid rgba(54, 88, 11, 0.911);
   font-style: italic;
   
 }
@@ -421,7 +422,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 .sign_up{
   display: flex;
   margin: 50px 20px 10px 70px;
-  color: white;
+  color: rgb(54, 51, 26);
 }
 
 .sign_up p{
@@ -451,8 +452,8 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 .sign_up input:focus{ 
   border:none;	
   outline:none;
-  border-bottom:1px solid rgba(32, 149, 32, 0.911);	
-  color: rgba(32, 149, 32, 0.911);
+  border-bottom:1px solid rgba(54, 88, 11, 0.911);	
+  color:solid rgba(54, 88, 11, 0.911);
 }
 
 .btn {
@@ -489,7 +490,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
     font-family: 'Pacifico', cursive;
   }
   .btn span:hover {
-  color: rgba(32, 149, 32, 0.911);
+  color:solid rgba(54, 88, 11, 0.911);
   }
   .btn::before,
   .btn::after {
@@ -525,13 +526,13 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   }
   .btn span::before {
     top: 0; left: 0;
-    border-left: 2px solid rgba(32, 149, 32, 0.911);
-    border-bottom: 2px solid rgba(32, 149, 32, 0.911);
+    border-left: 2px solid rgba(54, 88, 11, 0.911);
+    border-bottom: 2px solid rgba(54, 88, 11, 0.911);
   }
   .btn span::after {
     top: 0; right: 0;
-    border-right: 2px solid rgba(32, 149, 32, 0.911);
-    border-bottom: 2px solid rgba(32, 149, 32, 0.911);
+    border-right: 2px solid rgba(54, 88, 11, 0.911);
+    border-bottom: 2px solid rgba(54, 88, 11, 0.911);
   }
   .btn span:hover::before,
   .btn span:hover::after {
@@ -549,7 +550,7 @@ footer{
   position: absolute;
   left: 0;
   right: 0;
-  background: #111;
+  background: rgb(54, 51, 26);
   height: auto;
   width: 100%;
   padding-top: 5px;
@@ -602,11 +603,11 @@ footer{
 }
 
 .socials-media a:hover i{
-  color: rgba(32, 149, 32, 0.911);
+  color: solid rgba(32, 149, 32, 0.911);
 }
 
 .footer-bottom{
-  background: #000;
+  background: rgb(54, 51, 26);
   width: 100%px;
   padding: 20px;
   padding-bottom: 40px;
@@ -620,7 +621,7 @@ footer{
   text-transform: capitalize;
 }
 .footer-bottom p a{
-color:rgba(32, 149, 32, 0.911);
+color:solid rgba(54, 88, 11, 0.911);
 font-size: 16px;
 text-decoration: none;
 }
@@ -645,7 +646,7 @@ color: #cfd2d6;
 text-decoration: none;
 }
 .footer-menu ul li a:hover{
-color: rgba(32, 149, 32, 0.911);
+color: solid rgba(54, 88, 11, 0.911);
 }
 
 

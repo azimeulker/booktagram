@@ -80,7 +80,7 @@ return preg_replace("/^(.{1,$length})(\s.*|$)/s",'\\1...',$text);
         
         <section class="main">
             <div class="container">
-                <h1><i class="fa fa-pagelines"></i> Books of the Month <i class="ffa fa-pagelines"></i></h1>
+                <h1><i class="fa fa-pagelines"></i> Books of the Month <i class="fa fa-pagelines"></i></h1>
                 <div class="carousel">
                     <input type="radio" name="slides" checked="checked" id="slide-1">
                     <input type="radio" name="slides" id="slide-2">
