@@ -69,7 +69,7 @@ $statement->execute();
                     <div class="post_input">       
                         <div class="input-container">
                             <input type="text" name="name" required="" list="title_browser">
-                            <label>Please Enter Book BookID for Editing</label>
+                            <label>Please Enter Book Name for Editing</label>
                             <datalist id="title_browser">
                                 <?php while($book = $statement->fetch()): ?>
                                     <option value="<?= $book['book_name'] ?>"></option>
