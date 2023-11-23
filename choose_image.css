@@ -1,5 +1,6 @@
+
 body{
-    min-height: 150vh;
+    min-height: 700vh;
     background-image: linear-gradient(rgba(246, 218, 161, 0.7), rgba(246, 218, 161, 0.7)), url(images/background.jpg);
     width: 100%;
     background-position: center;
@@ -10,8 +11,8 @@ body{
 
 div.main_page{
   width: 95%;
-  height: 250vh;
-  margin-bottom: 40px;
+  height: 150vh;
+  margin-bottom: 30px;
 }
 
 
@@ -31,7 +32,7 @@ div.main_page{
 }
 
 .header img{
-    margin-top: -35px;
+    margin-top: -50px;
     width: 220px;
     height: 200px;
     margin-right: 20px;
@@ -42,11 +43,34 @@ div.main_page{
 }
 
 .navContainer{
-width: 100%;
+width: 90%;
 align-content: center;
 margin: 0px 50px 0px 50px;
 }
-
+.searchContainer .search_bar{
+  width: 90%;
+  align-content: center;
+  margin: 0px 50px 0px 50px;
+  display: flex;
+}
+.searchContainer .search_bar #button{
+  height: 42px;
+  width: 130px;
+  color: white;
+  font-weight: normal;
+  background-color: transparent;
+  border-radius: 10px;
+  border:1px solid white;
+  border-top: none;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.searchContainer .search_bar #button:hover{
+  background-color: rgb(54, 51, 26);
+  border:1px solid rgb(54, 51, 26);
+}
 a.logout{
   margin-top: 100px;
   color: transparent;
@@ -55,13 +79,13 @@ a.logout{
   align-content: right;
 }
 a.logout:hover{
-  color: rgba(54, 88, 11, 0.911);
+  color: rgba(32, 149, 32, 0.911);
 }
 
 .navMenu{
 flex-grow: 2;
 margin: 5px 30px 5px 30px;
-background-color:rgb(54, 51, 26);
+background-color: white;
 align-self: center;
 border-radius: 10px;
 box-shadow: 5px 5px 5px rgb(199, 184, 184);
@@ -81,9 +105,9 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 
 .navigation {
   --b: 0.1em;  
-  --c:rgba(54, 88, 11, 0.911);; 
+  --c: rgba(32, 149, 32, 0.911); 
   
-  color: white;
+  color: #0000;
   padding-block: var(--b);
   background: 
     linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
@@ -111,7 +135,8 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   font-size: 3rem;
   width: 30px;
   transition: color .4s ease;
-  margin-right: 50px;
+  margin-right: 40px;
+  margin-left: 25px;
   margin-bottom: 25px;
   padding: 1px 4px 4px;
 }
@@ -126,7 +151,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 }
 
 .admin i:hover{
-  color:  rgba(54, 88, 11, 0.911);
+  color: rgb(11, 142, 25);
 }
 .add_book i{
   color: rgb(54, 51, 26);
@@ -139,8 +164,9 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   }
   
   .add_book i:hover{
-  color: rgba(54, 88, 11, 0.911);;
+  color: rgba(32, 149, 32, 0.911);
   }
+  
 
 
 
@@ -149,14 +175,6 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 
 
 
-  .upload{
-    background-color: transparent;
-    border: 1px solid rgb(54, 51, 26);
-    min-height: 30vh;
-    width: 100%;
-    margin-left: 30px;
-    margin-bottom: 150px;
-  }
 .main{
   background-color: transparent;
     margin-top: 150px;
@@ -177,10 +195,20 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   font-size: 20px;
   text-align: center;
 }
-.main .page_info a{
-  color:rgb(54, 51, 26);
+.main .pagination{
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.main .page_info a,
+.main .pagination a{
+  color: white;
   text-decoration: none;
-  border: 2px solid rgb(54, 51, 26);
+  border: 2px solid white;
   border-radius: 10px;
   background-color: transparent;
   width: 100%;
@@ -191,18 +219,17 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   font-size: 18px;
   font-weight: bolder;
 }
-.main .page_info a:hover{
-  background-color: rgba(54, 88, 11, 0.911);;
-  color: rgb(54, 51, 26);
-  border: rgba(54, 88, 11, 0.911);
+.main .page_info a:hover,
+.main .pagination a:hover{
+  background-color: aquamarine;
+  color: black;
 }
 .post_input{
   position: absolute;
-  color: rgb(54, 51, 26);
+  color: white;
   width: 90%;
   margin-left: 20px;
   }
-
   .input-container{
     position:relative;
     margin-top: 10px;
@@ -214,56 +241,69 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
     top:0px;
     left:10px;
     font-size:20px;
-    color:rgb(54, 51, 26);	
+    color:white;	
     pointer-events:none;
     transition: all 0.5s ease-in-out;
   }
   .input-container input{ 
     border:0;
-    border-bottom:1px solid rgb(54, 51, 26);  
+    border-bottom:1px solid white; 
+    border-right:1px solid white;
+    border-left:1px solid white; 
     background:transparent;
-    width:50%;
-    padding:15px 0 3px 20px;
+    width:100%;
+    padding:20px 0 3px 10px;
     font-size:16px;
-    color:rgb(54, 51, 26);
+    color:white;
     border-radius: 10px;
-  }
-  .input-container textarea{
-      border:0;
-      border-bottom:1px solid white; 
-      border-left: 1px solid white; 
-      border-right: 1px solid white;
-      background:transparent;
-      width:70%;
-      height: 300px;
-      padding:15px 0 3px 20px;
-      font-size:16px;
-      color:white;
-      border-radius: 10px;
   }
   .input-container input:focus{ 
    border:none;	
    outline:none;
-   border-bottom:1px solid rgba(54, 88, 11, 0.911);	
-  }
-  .input-container textarea:focus{
-      border:none;	
-      outline:none;
-      border-bottom:1px solid rgba(54, 88, 11, 0.911);
-      border-left:1px solid rgba(54, 88, 11, 0.911);
-      border-right:1px solid rgba(54, 88, 11, 0.911);	
+   border-bottom:1px solid rgb(54, 51, 26);	
+   border-right:1px solid rgb(54, 51, 26);	
+   border-left:1px solid rgb(54, 51, 26);	
   }
   .input-container input:focus ~ label,
-  .input-container input:valid ~ label,
-  .input-container textarea:focus ~ label,
-  .input-container textarea:valid ~ label{
+  .input-container input:valid ~ label{
     top:-10px;
     font-size:16px;
-      font-weight: bolder;
+    color: rgb(54, 51, 26);
+    font-weight: bold;
   }
   
   #button{
-      height: 60px;
+      height: 75px;
+      width: 165px;
+      color: white;
+      font-weight: normal;
+      background-color: transparent;
+      border-radius: 5px;
+      border:1px solid white;
+      font-size: 20px;
+      font-family: 'Pacifico', cursive;
+      margin-top: 50px;
+      margin-left: 35px;
+  }
+  #button:hover{
+      background-color: rgba(32, 149, 32, 0.911);
+      border:1px solid rgba(32, 149, 32, 0.911);
+  }
+  #choose_file{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    height: 30px;
+    width: 100%;
+    color: rgb(54, 51, 26);
+    font-weight: normal;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+
+  }
+  #button1{
+    height: 40px;
       width: 170px;
       color: rgb(54, 51, 26);
       font-weight: normal;
@@ -272,17 +312,97 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
       border:1px solid rgb(54, 51, 26);
       font-size: 20px;
       font-family: 'Pacifico', cursive;
+      margin-left: 50px;
   }
-  #button:hover{
-      background-color: rgba(54, 88, 11, 0.911);
-      border:1px solid rgba(54, 88, 11, 0.911);;
-  }
-  
+  #button1:hover{
+    background-color: rgba(32, 149, 32, 0.911);
+    border:1px solid rgba(32, 149, 32, 0.911);
+    color: black;
+}
+
+
+
+
+
+.scene {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 100px;
+  align-items: center;
+  perspective: 800px;
+}
+.scene .card {
+  width: 240px;
+  height: 300px;
+  margin-bottom: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+.scene .card:hover {
+  transform: rotateY(0.5turn);
+}
+.scene .card .card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+.scene .card .card__face img {
+  width: 240px;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.scene .card .card__face--back {
+  transform: rotateY(0.5turn);
+  background-color: rgb(45, 43, 43);
+  border: 1px solid white;
+  color: white;
+}
+.scene .card .card__face--back h2{
+  font-weight: bolder;
+  font-style: italic;
+  color: aquamarine;
+  padding-right: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 80%;
+}
+.scene .card .card__face--back a{
+  text-decoration: none;
+  color: white;
+  align-content: center;
+  margin-left: 35px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+}
+.scene .card .card__face--back a:hover{
+    background-color: rgba(32, 149, 32, 0.911);
+    border:1px solid rgba(32, 149, 32, 0.911);
+}
+
+
+
+
 
 .sign_up{
   display: flex;
   margin: 50px 20px 10px 70px;
-  color: rgb(54, 51, 26);
+  color: white;
 }
 
 .sign_up p{
@@ -293,7 +413,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 }
 
 ::placeholder { 
-  color: rgb(54, 51, 26);
+  color: white;
   opacity: 1;
   font-family: 'Pacifico', cursive;
 }
@@ -301,19 +421,19 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 .sign_up input{
   flex-grow: 1;
   border:0;
-  border-bottom:1px solid rgb(54, 51, 26);  
+  border-bottom:1px solid white;  
   background:transparent;
   padding:10px 10px 10px 0px;
   font-size:16px;
   margin: 0px 20px 20px 20px;
-  color:rgb(54, 51, 26);
+  color:white;
 }
 
 .sign_up input:focus{ 
   border:none;	
   outline:none;
-  border-bottom:1px solid rgba(54, 88, 11, 0.911);;	
-  color: rgba(54, 88, 11, 0.911);;
+  border-bottom:1px solid rgba(32, 149, 32, 0.911);	
+  color: rgba(32, 149, 32, 0.911);
 }
 
 .btn {
@@ -350,7 +470,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
     font-family: 'Pacifico', cursive;
   }
   .btn span:hover {
-  color:rgba(54, 88, 11, 0.911);;
+  color: rgba(32, 149, 32, 0.911);
   }
   .btn::before,
   .btn::after {
@@ -386,13 +506,13 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   }
   .btn span::before {
     top: 0; left: 0;
-    border-left: 2px solid rgba(54, 88, 11, 0.911);;
-    border-bottom: 2px solid rgba(54, 88, 11, 0.911);;
+    border-left: 2px solid rgba(32, 149, 32, 0.911);
+    border-bottom: 2px solid rgba(32, 149, 32, 0.911);
   }
   .btn span::after {
     top: 0; right: 0;
-    border-right: 2px solid rgba(54, 88, 11, 0.911);;
-    border-bottom: 2px solid rgba(54, 88, 11, 0.911);;
+    border-right: 2px solid rgba(32, 149, 32, 0.911);
+    border-bottom: 2px solid rgba(32, 149, 32, 0.911);
   }
   .btn span:hover::before,
   .btn span:hover::after {
@@ -410,10 +530,10 @@ footer{
   position: absolute;
   left: 0;
   right: 0;
-  background:rgb(54, 51, 26);
+  background: #111;
   height: auto;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 5px;
   color: #fff;
 }
 .footer-content{
@@ -463,11 +583,11 @@ footer{
 }
 
 .socials-media a:hover i{
-  color: rgba(54, 88, 11, 0.911);;
+  color: rgba(32, 149, 32, 0.911);
 }
 
 .footer-bottom{
-  background: rgb(54, 51, 26);
+  background: #000;
   width: 100%px;
   padding: 20px;
   padding-bottom: 40px;
@@ -506,7 +626,7 @@ color: #cfd2d6;
 text-decoration: none;
 }
 .footer-menu ul li a:hover{
-color: rgba(54, 88, 11, 0.911);;
+color: rgba(32, 149, 32, 0.911);
 }
 
 
