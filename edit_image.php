@@ -68,8 +68,8 @@
 
         <footer>
             <div class="footer-content">
-                <h3>Bookaholic</h3>
-                <p>Bookaholic is the new-era digital library, in where you can find any types of your favorite books!!!</p>
+                <h3>Booktagram</h3>
+                <p>Explore a boundless digital realm where every book finds its home!</p>
                 <ul class="socials-media">
                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="footer-bottom">
-                    <p>copyright &copy; <a href="#">Bookaholic</a></p>
+                    <p>copyright &copy; <a href="#">Booktagram</a></p>
                         <div class="footer-menu">
                             <ul class="f-menu">
                             <li><a href="index.php">Home</a></li>
