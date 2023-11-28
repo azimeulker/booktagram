@@ -32,7 +32,7 @@ div.main_page{
 }
 
 .header img{
-    margin-top: -50px;
+    margin-top: -35px;
     width: 220px;
     height: 200px;
     margin-right: 20px;
@@ -56,7 +56,7 @@ margin: 0px 50px 0px 50px;
 .searchContainer .search_bar #button{
   height: 42px;
   width: 130px;
-  color: white;
+  color: rgb(54, 51, 26);;
   font-weight: normal;
   background-color: transparent;
   border-radius: 10px;
@@ -85,7 +85,7 @@ a.logout:hover{
 .navMenu{
 flex-grow: 2;
 margin: 5px 30px 5px 30px;
-background-color: white;
+background-color: rgb(54, 51, 26);;
 align-self: center;
 border-radius: 10px;
 box-shadow: 5px 5px 5px rgb(199, 184, 184);
@@ -107,7 +107,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
   --b: 0.1em;  
   --c: rgba(32, 149, 32, 0.911); 
   
-  color: #0000;
+  color:white;
   padding-block: var(--b);
   background: 
     linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
@@ -221,7 +221,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 }
 .main .page_info a:hover,
 .main .pagination a:hover{
-  background-color: aquamarine;
+  background-color: rgba(32, 149, 32, 0.911);
   color: black;
 }
 .post_input{
@@ -373,7 +373,7 @@ box-shadow: 5px 5px 5px rgb(199, 184, 184);
 .scene .card .card__face--back h2{
   font-weight: bolder;
   font-style: italic;
-  color: aquamarine;
+  color:rgba(32, 149, 32, 0.911); ;
   padding-right: 10px;
   text-align: center;
   margin-bottom: 50px;
