@@ -70,7 +70,7 @@ $author_statement->execute();
 
         
         <section class="main">
-            <div id="admin_book">  
+            <div id="admin_book">
             
                 <div id="title">
                     <a href="admin_book.php">Add New Book <i class="fa-solid fa-plus"></i></a>

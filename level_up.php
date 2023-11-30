@@ -102,12 +102,6 @@ if($_POST){
                             <input type="text" name="level" value="<?= $user['level'] ?>">
                             <label>Current Level</label>
                         </div>    
-
-                        <div class="input-container">
-                            <input id="content" name="date" value="<?= $user['date_created'] ?>"></textarea>
-                            <label>Registered Date</label>
-                        </div>
-
                         <div><input type="submit" id="button" value="Level Up !!!"></div>
                     </div>
                 </form>
