@@ -123,10 +123,10 @@ $image_array = [];
                         <?php endwhile ?>
                     <?php else: ?>
                         <div class="page_info">
-                            <h2>Sorry 🥲 Booktagram hasn't had any Books written by <?= $_POST["author"] ?> yet 😥</h2>
+                            <h2>Sorry🥲 Booktagram hasn't had any Books written by <?= $_POST["author"] ?> yet 😥</h2>
 
                             <h2>
-                                Updated your own Book of this Author? 😊
+                                Updated your own Book of this Author?😊
                                 <a href="admin_book.php">Upload here!</a>
                             </h2>
                         </div>
