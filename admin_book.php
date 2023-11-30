@@ -140,7 +140,7 @@ $author_statement->execute();
 
         <footer>
             <div class="footer-content">
-                <h3>Booktagram</h3>
+                <h3>Booktagram!</h3>
                 <p>Explore a boundless digital realm where every book finds its home!</p>
                 <ul class="socials-media">
                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
